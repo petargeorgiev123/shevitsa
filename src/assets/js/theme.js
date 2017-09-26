@@ -1,13 +1,14 @@
 /////////////////////////////////////////////////////////////////////
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 /////////////////////////////////////////////////////////////////////
-
-$('.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top -64
-    }, 1500, 'easeInOutExpo');
-    event.preventDefault();
+$(window).load(function() {
+    $('.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top -64
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });
 
 
@@ -15,52 +16,52 @@ $('.page-scroll').bind('click', function(event) {
 ////////////////////////////////////////////////////////////////////////
 // On-Scroll Animated Header: https://github.com/codrops/AnimatedHeader
 ////////////////////////////////////////////////////////////////////////
+$(window).load(function() {
+    var cbpAnimatedHeader = (function() {
 
-var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+            header = document.querySelector( '.navbar-fixed-top' ),
+            didScroll = false,
+            changeHeaderOn = 10;
 
-    var docElem = document.documentElement,
-        header = document.querySelector( '.navbar-fixed-top' ),
-        didScroll = false,
-        changeHeaderOn = 10;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
 
-    function init() {
-        window.addEventListener( 'scroll', function( event ) {
-            if( !didScroll ) {
-                didScroll = true;
-                setTimeout( scrollPage, 250 );
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                classie.add( header, 'navbar-shrink' );
             }
-        }, false );
-    }
-
-    function scrollPage() {
-        var sy = scrollY();
-        if ( sy >= changeHeaderOn ) {
-            classie.add( header, 'navbar-shrink' );
+            else {
+                classie.remove( header, 'navbar-shrink' );
+            }
+            didScroll = false;
         }
-        else {
-            classie.remove( header, 'navbar-shrink' );
+
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
         }
-        didScroll = false;
-    }
 
-    function scrollY() {
-        return window.pageYOffset || docElem.scrollTop;
-    }
+        init();
 
-    init();
-
-})();
-
-
+    })();
+});
 
 //////////////////////////////////////////////
 // Highlight the top nav as scrolling occurs
 //////////////////////////////////////////////
-
-$('body').scrollspy({
-    target: '.navbar',
-    offset: 65
-})
+$(window).load(function() {
+    $('body').scrollspy({
+        target: '.navbar',
+        offset: 65
+    })
+});
 
 
 
@@ -115,11 +116,12 @@ $(window).load(function() {
 ////////////////////////////////////////////////////////////////////
 // Stellar (parallax): https://github.com/markdalgleish/stellar.js
 ////////////////////////////////////////////////////////////////////
-
-$.stellar({
-    // Set scrolling to be in either one or both directions
-    horizontalScrolling: false,
-    verticalScrolling: true,
+$(window).load(function() {
+    $.stellar({
+        // Set scrolling to be in either one or both directions
+        horizontalScrolling: false,
+        verticalScrolling: true,
+    });
 });
 
 
@@ -127,18 +129,20 @@ $.stellar({
 ///////////////////////////////////////////////////////////
 // WOW animation scroll: https://github.com/matthieua/WOW
 ///////////////////////////////////////////////////////////
-
-new WOW().init();
+$(window).load(function() {
+    new WOW().init();
+});
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // Counter-Up (requires jQuery waypoints.js plugin): https://github.com/bfintal/Counter-Up
 ////////////////////////////////////////////////////////////////////////////////////////////
-
-$('.counter').counterUp({
-    delay: 10,
-    time: 2000
+$(window).load(function() {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
 
 
@@ -147,21 +151,21 @@ $('.counter').counterUp({
 // Isotop Package
 ////////////////////////////////////////////////////////////////////////////////////////////
 $(window).load(function() {
-$('.portfolio_menu ul li').click(function(){
-	$('.portfolio_menu ul li').removeClass('active_prot_menu');
-	$(this).addClass('active_prot_menu');
-});
+    $('.portfolio_menu ul li').click(function(){
+        $('.portfolio_menu ul li').removeClass('active_prot_menu');
+        $(this).addClass('active_prot_menu');
+    });
 
-var $container = $('#portfolio');
-$container.isotope({
-  itemSelector: '.col-sm-4',
-  layoutMode: 'fitRows'
-});
-$('#filters').on( 'click', 'a', function() {
-  var filterValue = $(this).attr('data-filter');
-  $container.isotope({ filter: filterValue });
-  return false;
-});
+    var $container = $('#portfolio');
+    $container.isotope({
+      itemSelector: '.col-sm-2',
+      layoutMode: 'fitRows'
+    });
+    $('#filters').on( 'click', 'a', function() {
+      var filterValue = $(this).attr('data-filter');
+      $container.isotope({ filter: filterValue });
+      return false;
+    });
 });
 
 
@@ -169,20 +173,21 @@ $('#filters').on( 'click', 'a', function() {
 /////////////////////////
 // Scroll to top button
 /////////////////////////
+$(window).load(function() {
+    // Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrolltotop').fadeIn();
+        } else {
+            $('.scrolltotop').fadeOut();
+        }
+    });
 
-// Check to see if the window is top if not then display button
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-        $('.scrolltotop').fadeIn();
-    } else {
-        $('.scrolltotop').fadeOut();
-    }
-});
-
-// Click event to scroll to top
-$('.scrolltotop').click(function(){
-    $('html, body').animate({scrollTop : 0}, 1500, 'easeInOutExpo');
-    return false;
+    // Click event to scroll to top
+    $('.scrolltotop').click(function(){
+        $('html, body').animate({scrollTop : 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
 });
 
 
@@ -190,9 +195,10 @@ $('.scrolltotop').click(function(){
 ////////////////////////////////////////////////////////////////////
 // Close mobile menu when click menu link (Bootstrap default menu)
 ////////////////////////////////////////////////////////////////////
-
-$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-        $(this).collapse('hide');
-    }
+$(window).load(function() {
+    $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+            $(this).collapse('hide');
+        }
+    });
 });
