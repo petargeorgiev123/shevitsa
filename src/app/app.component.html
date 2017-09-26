@@ -1,3 +1,43 @@
+<!--========== BEGIN HEADER ==========-->
+<header id="header" class="header-main">
+  <!-- Begin Navbar -->
+  <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
+    <div class="text-right">
+      <a (click)="switchLanguage('bg')">Български</a>
+      <a (click)="switchLanguage('en')">English</a>
+    </div>
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">Unika</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="body" translate>Home</a></li>
+          <li><a class="page-scroll" href="#about-section" translate>About</a></li>
+          <li><a class="page-scroll" href="#services-section" translate>Services</a></li>
+          <li><a class="page-scroll" href="#portfolio-section" translate>Works</a></li>
+          <li><a class="page-scroll" href="#team-section" translate>Team</a></li>
+          <li><a class="page-scroll" href="#prices-section" translate>Prices</a></li>
+          <li><a class="page-scroll" href="#contact-section" translate>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+  <!-- End Navbar -->
+
+</header>
+<!-- ========= END HEADER =========-->
+
 <!-- Begin text carousel intro section -->
 <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(assets/img/slider-bg.jpg);">
 
@@ -338,6 +378,7 @@
             </div>
           </div>
           <!-- End page header-->
+
           <div class="portfoloi_content_area" >
             <div class="portfolio_menu" id="filters">
               <ul>
@@ -351,34 +392,34 @@
             </div>
             <div class="portfolio_content">
               <div class="row"  id="portfolio">
-                <div class="col-xs-12 col-sm-4 appsDevelopment">
+                <div class="col-xs-12 col-sm-2 responsive">
                   <div class="portfolio_single_content">
-                    <img src="assets/img/portfolio/p1.jpg" alt="title"/>
-                    <div>
-                      <a href="#">Skull Awesome</a>
-                      <span>Subtitle</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 GraphicDesign">
-                  <div class="portfolio_single_content">
-                    <img src="assets/img/portfolio/p2.jpg" alt="title"/>
-                    <div>
-                      <a href="#">Photo Frame</a>
-                      <span>Subtitle</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 responsive">
-                  <div class="portfolio_single_content">
-                    <img src="assets/img/portfolio/p3.jpg" alt="title"/>
+                    <img src="assets/img/portfolio/image3.jpg" alt="title"/>
                     <div>
                       <a href="#">Hand Shots</a>
                       <span>Subtitle</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 webDesign websites">
+                <div class="col-xs-12 col-sm-2 appsDevelopment">
+                  <div class="portfolio_single_content">
+                    <img src="assets/img/portfolio/image.jpg" alt="title"/>
+                    <div>
+                      <a href="#">Skull Awesome</a>
+                      <span>Subtitle</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 GraphicDesign">
+                  <div class="portfolio_single_content">
+                    <img src="assets/img/portfolio/image2.jpg" alt="title"/>
+                    <div>
+                      <a href="#">Photo Frame</a>
+                      <span>Subtitle</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 webDesign websites">
                   <div class="portfolio_single_content">
                     <img src="assets/img/portfolio/p4.jpg" alt="title"/>
                     <div>
@@ -387,7 +428,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 appsDevelopment websites">
+                <div class="col-xs-12 col-sm-2 appsDevelopment websites">
                   <div class="portfolio_single_content">
                     <img src="assets/img//portfolio/p5.jpg" alt="title"/>
                     <div>
@@ -396,7 +437,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 GraphicDesign">
+                <div class="col-xs-12 col-sm-2 responsive">
+                  <div class="portfolio_single_content">
+                    <img src="assets/img/portfolio/image3.jpg" alt="title"/>
+                    <div>
+                      <a href="#">Hand Shots</a>
+                      <span>Subtitle</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 GraphicDesign">
                   <div class="portfolio_single_content">
                     <img src="assets/img/portfolio/p6.jpg" alt="title"/>
                     <div>
@@ -405,7 +455,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 responsive">
+                <div class="col-xs-12 col-sm-2 responsive">
                   <div class="portfolio_single_content">
                     <img src="assets/img/portfolio/p7.jpg" alt="title"/>
                     <div>
@@ -414,7 +464,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 GraphicDesign">
+                <div class="col-xs-12 col-sm-2 GraphicDesign">
                   <div class="portfolio_single_content">
                     <img src="assets/img/portfolio/p8.jpg" alt="title"/>
                     <div>
@@ -423,7 +473,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 websites">
+                <div class="col-xs-12 col-sm-2 responsive">
+                  <div class="portfolio_single_content">
+                    <img src="assets/img/portfolio/image3.jpg" alt="title"/>
+                    <div>
+                      <a href="#">Hand Shots</a>
+                      <span>Subtitle</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 websites">
                   <div class="portfolio_single_content">
                     <img src="assets/img/portfolio/p9.jpg" alt="title"/>
                     <div>
