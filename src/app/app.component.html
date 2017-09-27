@@ -920,22 +920,31 @@
         </div>
 
         <div class="col-sm-6">
+          <!--<h1>Information Request</h1>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <input type="text" placeholder="Name" formControlName="name">
+              <input type="text" placeholder="Email" formControlName="email">
+              <textarea placeholder="Message" formControlName="message">
+            </textarea>
+              <button type="submit" [disabled]="form.invalid">Submit</button>
+            </form>-->
+
           <div class="contact-form">
             <h4>Write to us</h4>
-            <form role="form">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
               <div class="form-group">
-                <input type="text" class="form-control input-lg" placeholder="Your Name" required>
+                <input type="text" class="form-control input-lg" placeholder="Your Name" formControlName="name" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control input-lg" placeholder="E-mail" required>
+                <input type="email" class="form-control input-lg" placeholder="E-mail" formControlName="email" required>
               </div>
-              <div class="form-group">
+              <!--<div class="form-group">
                 <input type="text" class="form-control input-lg" placeholder="Subject" required>
-              </div>
+              </div>-->
               <div class="form-group">
-                <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control input-lg" rows="5" placeholder="Message" formControlName="message" required></textarea>
               </div>
-              <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+              <button type="submit" [disabled]="form.invalid" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
             </form>
           </div>
         </div>
@@ -972,11 +981,11 @@
           <h4>Subscribe</h4>
           <div id="footer_signup">
             <div id="email">
-              <form id="subscribe" method="POST">
+              <!--<form id="subscribe" method="POST">
                 <input type="text" placeholder="Enter email address" name="email" id="address" data-validate="validate(required, email)"/>
                 <button type="submit">Submit</button>
                 <span id="result" class="section-description"></span>
-              </form>
+              </form>-->
             </div>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

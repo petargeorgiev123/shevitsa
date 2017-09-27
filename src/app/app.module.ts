@@ -4,6 +4,13 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
+
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
+
 import { AppComponent } from './app.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -23,7 +30,10 @@ export function HttpLoaderFactory(http: HttpClient) {
               useFactory: HttpLoaderFactory,
               deps: [HttpClient]
           }
-      })
+      }),
+      ReactiveFormsModule,
+      AngularFireModule.initializeApp(environment.firebase),
+      AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
