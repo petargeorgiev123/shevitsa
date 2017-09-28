@@ -12,6 +12,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
+import { CountersComponent } from './Counters/counters.component';
+import { GalleryComponent} from './Gallery/gallery.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -19,7 +21,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+      CountersComponent,
+      GalleryComponent
   ],
   imports: [
       BrowserModule,
