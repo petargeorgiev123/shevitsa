@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
+
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
     form: FormGroup;
-    constructor(private translate: TranslateService, private fb: FormBuilder, private af: AngularFireDatabase) {
+    constructor(
+        private translate: TranslateService,
+        private fb: FormBuilder,
+        private af: AngularFireDatabase)
+    {
         translate.setDefaultLang('bg');
         this.createForm();
     }
