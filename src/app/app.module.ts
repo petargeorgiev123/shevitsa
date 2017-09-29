@@ -12,8 +12,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
-import { CountersComponent } from './Counters/counters.component';
-import { GalleryComponent} from './Gallery/gallery.component';
+import { CountersComponent } from './sectionCounters/counters.component';
+import { GalleryComponent} from './sectionGallery/gallery.component';
+import { PartnersComponent } from './sectionPartners/partners.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -23,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
       CountersComponent,
-      GalleryComponent
+      GalleryComponent,
+      PartnersComponent
   ],
   imports: [
       BrowserModule,
