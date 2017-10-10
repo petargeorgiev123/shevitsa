@@ -322,7 +322,8 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	display: inline-block;
 	text-align: center;
 	margin-bottom: 15px;
-	margin-right: 25px;
+	/*margin-right: 25px;*/
+	margin-right: -6px;
 	margin-top: 10px;
 	float:left;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -751,7 +752,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 .prices .panel-body .lead {
 	margin: 0;
-	font-size: 48px;
+	font-size: 28px;
 }
 .prices .panel-footer {
 	padding: 25px 15px;
@@ -813,7 +814,7 @@ ul.social-list {
 }
 ul.social-list li{
 	display: inline-block;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 ul.social-list li .rotate-box-1 {
 	margin: 0;
@@ -1145,5 +1146,50 @@ p.subtitle {
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+
+/* Scroll to top button */
+.sticky-container{
+	padding:0px;
+	margin:0px;
+	position:fixed;
+	right:-170px;
+	top:230px;
+	width:210px;
+	z-index: 1100;
+}
+.sticky li{
+	list-style-type:none;
+	background-color:#fff;
+	color:#efefef;
+	height:43px;
+	padding:0px;
+	margin:0px 0px 1px 0px;
+	-webkit-transition:all 0.25s ease-in-out;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+	cursor:pointer;
+}
+.sticky li:hover{
+	margin-left:-115px;
+}
+.sticky li img{
+	float:left;
+	margin:5px 4px;
+	margin-right:5px;
+}
+.sticky li p{
+	padding-top:5px;
+	margin:0px;
+	line-height:16px;
+	font-size:11px;
+}
+.sticky li p a{
+	text-decoration:none;
+	color:#2C3539;
+}
+.sticky li p a:hover{
+	text-decoration:underline;
 }
 /* ===== End buttons ===== */

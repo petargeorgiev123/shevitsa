@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { CountersComponent } from './sectionCounters/counters.component';
 import { GalleryComponent} from './sectionGallery/gallery.component';
 import { PartnersComponent } from './sectionPartners/partners.component';
+import { AboutComponent} from './sectionAbout/about.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -25,7 +26,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
       CountersComponent,
       GalleryComponent,
-      PartnersComponent
+      PartnersComponent,
+      AboutComponent
   ],
   imports: [
       BrowserModule,

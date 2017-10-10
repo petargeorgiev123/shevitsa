@@ -3,8 +3,8 @@
   <!-- Begin Navbar -->
   <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
     <div class="text-right">
-      <a (click)="switchLanguage('bg')">Български</a>
-      <a (click)="switchLanguage('en')">English</a>
+      <a (click)="switchLanguage('bg')"><img src="assets/img/bg.jpg" alt="Български"/>Български</a>
+      <a (click)="switchLanguage('en')"><img src="assets/img/en.jpg" alt="English"/>English</a>
     </div>
 
     <div class="container">
@@ -71,143 +71,10 @@
 </section>
 <!-- End text carousel intro section -->
 
+
 <!-- Begin about section -->
-<section id="about-section" class="page bg-style1">
-  <!-- Begin page header-->
-  <div class="page-header-wrapper">
-    <div class="container">
-      <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
-        <h2>About</h2>
-        <div class="devider"></div>
-        <p class="subtitle">little information</p>
-      </div>
-    </div>
-  </div>
-  <!-- End page header-->
-
-  <!-- Begin rotate box-1 -->
-  <div class="rotate-box-1-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0">
-            <span class="rotate-box-icon"><i class="fa fa-users"></i></span>
-            <div class="rotate-box-info">
-              <h4>Who We Are?</h4>
-              <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-          <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.2s">
-            <span class="rotate-box-icon"><i class="fa fa-diamond"></i></span>
-            <div class="rotate-box-info">
-              <h4>What We Do?</h4>
-              <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-          <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
-            <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
-            <div class="rotate-box-info">
-              <h4>Why We Do It?</h4>
-              <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-          <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.6s">
-            <span class="rotate-box-icon"><i class="fa fa-clock-o"></i></span>
-            <div class="rotate-box-info">
-              <h4>Since When?</h4>
-              <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
-            </div>
-          </a>
-        </div>
-
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div>
-  <!-- End rotate box-1 -->
-
-  <div class="extra-space-l"></div>
-
-  <!-- Begin page header-->
-  <div class="page-header-wrapper">
-    <div class="container">
-      <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
-        <h4>Our Skills</h4>
-      </div>
-    </div>
-  </div>
-  <!-- End page header-->
-
-  <!-- Begin Our Skills -->
-  <div class="our-skills">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-sm-6">
-          <div class="skill-bar wow slideInLeft" data-wow-delay="0.2s">
-            <div class="progress-lebel">
-              <h6>Photoshop & Illustrator</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="skill-bar wow slideInRight" data-wow-delay="0.2s">
-            <div class="progress-lebel">
-              <h6>WordPress</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="skill-bar wow slideInLeft" data-wow-delay="0.4s">
-            <div class="progress-lebel">
-              <h6>Html & Css</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="skill-bar wow slideInRight" data-wow-delay="0.4s">
-            <div class="progress-lebel">
-              <h6>Javascript</h6>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div>
-  <!-- End Our Skill -->
-</section>
+<about-detail></about-detail>
 <!-- End about section -->
-
-
-
 
 <!-- Begin cta -->
 <section id="cta-section">
@@ -216,13 +83,13 @@
       <div class="row">
 
         <div class="col-md-9">
-          <h1>Download Our Pdf</h1>
-          <p>Inspired by nature, follow technology, appreciate the classics. You can build modern & professional websites with Unika. The possibilities are just endless.</p>
+          <h1 translate>Download Our Pdf</h1>
+          <p translate>download-text</p>
         </div>
 
         <div class="col-md-3">
           <div class="cta-btn wow bounceInRight" data-wow-delay="0.4s">
-            <a class="btn btn-default btn-lg" href="http://www.imransdesign.com/" target="_blank" role="button">Download</a>
+            <a class="btn btn-default btn-lg" href="http://www.imransdesign.com/" target="_blank" role="button" translate>Download</a>
           </div>
         </div>
 
@@ -319,9 +186,9 @@
     <div class="page-header-wrapper">
       <div class="container">
         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-          <h2>Reviews</h2>
+          <h2 translate>Reviews</h2>
           <div class="devider"></div>
-          <p class="subtitle">What people say about us</p>
+          <p class="subtitle" translate>What people say about us</p>
         </div>
       </div>
     </div>
@@ -529,11 +396,11 @@
         <div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.3s">
           <div class="panel panel-default">
             <div class="panel-heading text-center">
-              <i class="fa fa-plug fa-2x"></i>
-              <h3>Basic</h3>
+              <i class="fa fa-male fa-2x"></i>
+              <h3 translate>man shirt</h3>
             </div>
             <div class="panel-body text-center">
-              <p class="lead"><strong>$49</strong></p>
+              <p class="lead" translate>price1</p>
             </div>
             <ul class="list-group text-center">
               <li class="list-group-item">Personal Use</li>
@@ -543,7 +410,7 @@
               <li class="list-group-item">24/7 Support</li>
             </ul>
             <div class="panel-footer text-center">
-              <a class="btn btn-default" href="#">Order Now!</a>
+              <a class="btn btn-default" target="_blank" href="https://www.facebook.com/pg/shevitsaeood/photos/?tab=album&album_id=1807286012645718" translate>Gallery</a>
             </div>
           </div>
         </div>
@@ -551,11 +418,11 @@
         <div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.5s">
           <div class="panel panel-default">
             <div class="panel-heading text-center">
-              <i class="fa fa-cog fa-2x"></i>
-              <h3>Advanced</h3>
+              <i class="fa fa-female fa-2x"></i>
+              <h3 translate>woman shirt</h3>
             </div>
             <div class="panel-body text-center">
-              <p class="lead"><strong>$99</strong></p>
+              <p class="lead"translate>price2</p>
             </div>
             <ul class="list-group text-center">
               <li class="list-group-item">Personal Use</li>
@@ -565,7 +432,7 @@
               <li class="list-group-item">24/7 Support</li>
             </ul>
             <div class="panel-footer text-center">
-              <a class="btn btn-default" href="#">Order Now!</a>
+              <a class="btn btn-default" target="_blank" href="https://www.facebook.com/pg/shevitsaeood/photos/?tab=album&album_id=1816204491753870" translate>Gallery</a>
             </div>
           </div>
         </div>
@@ -573,11 +440,11 @@
         <div class="price-box col-sm-6 price-box-featured col-md-3 wow flipInY" data-wow-delay="0.7s">
           <div class="panel panel-default">
             <div class="panel-heading text-center">
-              <i class="fa fa-star fa-2x"></i>
-              <h3>Professional</h3>
+              <i class="fa fa-child fa-2x"></i>
+              <h3 translate>pack</h3>
             </div>
             <div class="panel-body text-center">
-              <p class="lead"><strong>$149</strong></p>
+              <p class="lead" translate>price3</p>
             </div>
             <ul class="list-group text-center">
               <li class="list-group-item">Personal Use</li>
@@ -587,20 +454,20 @@
               <li class="list-group-item">24/7 Support</li>
             </ul>
             <div class="panel-footer text-center">
-              <a class="btn btn-default" href="#">Order Now!</a>
+              <a class="btn btn-default" target="_blank" href="https://www.facebook.com/pg/shevitsaeood/photos/?tab=album&album_id=1816201421754177" translate>Gallery</a>
             </div>
-            <div class="price-box-ribbon"><strong>Popular</strong></div>
+            <div class="price-box-ribbon"><strong translate>Popular</strong></div>
           </div>
         </div>
 
         <div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.9s">
           <div class="panel panel-default">
             <div class="panel-heading text-center">
-              <i class="fa fa-plus fa-2x"></i>
-              <h3>Ultimate</h3>
+              <i class="fa fa-child fa-2x"></i>
+              <h3 translate>child shirt</h3>
             </div>
             <div class="panel-body text-center">
-              <p class="lead"><strong>$199</strong></p>
+              <p class="lead" translate>price4</p>
             </div>
             <ul class="list-group text-center">
               <li class="list-group-item">Multi Use</li>
@@ -610,7 +477,7 @@
               <li class="list-group-item">24/7 Support</li>
             </ul>
             <div class="panel-footer text-center">
-              <a class="btn btn-default" href="#">Order Now!</a>
+              <a class="btn btn-default" target="_blank" href="https://www.facebook.com/pg/shevitsaeood/photos/?tab=album&album_id=1816201421754177" translate>Gallery</a>
             </div>
           </div>
         </div>
@@ -633,9 +500,9 @@
   <div class="page-header-wrapper">
     <div class="container">
       <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-        <h2>Join Us</h2>
+        <h2 translate>Join Us</h2>
         <div class="devider"></div>
-        <p class="subtitle">Follow us on social networks</p>
+        <p class="subtitle" translate>Follow us on social networks</p>
       </div>
     </div>
   </div>
@@ -643,13 +510,17 @@
 
   <div class="container">
     <ul class="social-list">
-      <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
+      <li> <a href="https://www.facebook.com/shevitsaeood/" target="_blank" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
+<!--
       <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span class="rotate-box-icon"><i class="fa fa-twitter"></i></span></a></li>
+-->
+<!--
       <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span class="rotate-box-icon"><i class="fa fa-google-plus"></i></span></a></li>
-      <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.6s"><span class="rotate-box-icon"><i class="fa fa-pinterest-p"></i></span></a></li>
-      <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.7s"><span class="rotate-box-icon"><i class="fa fa-tumblr"></i></span></a></li>
+-->
+      <li> <a href="https://www.pinterest.com/shevitsa/" target="_blank" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.6s"><span class="rotate-box-icon"><i class="fa fa-pinterest-p"></i></span></a></li>
+     <!-- <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.7s"><span class="rotate-box-icon"><i class="fa fa-tumblr"></i></span></a></li>
       <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.8s"><span class="rotate-box-icon"><i class="fa fa-dribbble"></i></span></a></li>
-    </ul>
+    --></ul>
   </div>
 
 </section>
@@ -731,7 +602,7 @@
 
 
 <!-- Begin footer -->
-<footer class="text-off-white">
+<!--<footer class="text-off-white">
 
   <div class="footer-top">
     <div class="container">
@@ -753,11 +624,11 @@
           <h4>Subscribe</h4>
           <div id="footer_signup">
             <div id="email">
-              <!--<form id="subscribe" method="POST">
+              &lt;!&ndash;<form id="subscribe" method="POST">
                 <input type="text" placeholder="Enter email address" name="email" id="address" data-validate="validate(required, email)"/>
                 <button type="submit">Submit</button>
                 <span id="result" class="section-description"></span>
-              </form>-->
+              </form>&ndash;&gt;
             </div>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -775,8 +646,8 @@
           </div>
         </div>
 
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
+      </div> &lt;!&ndash; /.row &ndash;&gt;
+    </div> &lt;!&ndash; /.container &ndash;&gt;
   </div>
 
   <div class="footer">
@@ -786,6 +657,34 @@
   </div>
 
 </footer>
-<!-- End footer -->
+&lt;!&ndash; End footer &ndash;&gt;-->
 
 <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+<div class="sticky-container">
+  <ul class="sticky">
+    <li>
+      <img src="assets/img/facebook-circle.png" width="32" height="32">
+      <p><a href="https://www.facebook.com/shevitsaeood/" target="_blank">Like Us on<br>Facebook</a></p>
+    </li>
+    <!--<li>
+      <img src="images/twitter-circle.png" width="32" height="32">
+      <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+    </li>
+    <li>
+      <img src="images/gplus-circle.png" width="32" height="32">
+      <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
+    </li>
+    <li>
+      <img src="images/linkedin-circle.png" width="32" height="32">
+      <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+    </li>
+    <li>
+      <img src="images/youtube-circle.png" width="32" height="32">
+      <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
+    </li>-->
+    <li>
+      <img src="assets/img/pin-circle.png" width="32" height="32">
+      <p><a href="https://www.pinterest.com/shevitsa/" target="_blank">Follow Us on<br>Pinterest</a></p>
+    </li>
+  </ul>
+</div>
